@@ -81,4 +81,27 @@ html {
   text-transform: capitalize;
   cursor: pointer;
 }
+/* start swich bullets */
+.switch-bullets {
+  color: white;
+  text-align: left;
+  margin: 15px auto 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch-bullets p {
+  font-weight: 400;
+  color: #394150;
+  margin-right: 10px;
+}
+.switch-bullets span {
+  width: 10px;
+  height: 10px;
+  background-color: #212936;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+/* end swich bullets */
 /* end stepOne */
