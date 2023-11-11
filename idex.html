@@ -5,13 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multi-step Register Form</title>
     <!-- normliaz stylesheet -->
-    <link rel="stylesheet" href="css/normliaz.css"/>
+    <link rel="stylesheet" href="css/normliaz.css" />
     <!-- all.min stylesheet -->
-    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css" />
     <!-- main CSS stylesheet -->
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="main">
+      <div class="container">
+        <!-- start step one -->
+        <div class="step-one">
+          <form action="">
+            <h3>Register</h3>
+            <label for="name">name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="enter your name"
+            />
+            <label for="email">email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+            />
+            <button type="button" value="continue">continue</button>
+          </form>
+        </div>
+        <!-- end step one -->
+      </div>
+    </div>
     <script src="master.js"></script>
   </body>
 </html>

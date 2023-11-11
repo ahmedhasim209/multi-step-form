@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Inter", sans-serif;
+}
+/* start main */
+.main {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #261d51,
+    #121826,
+    #121826,
+    #121826,
+    #121826,
+    #261d51
+  );
+}
+.main .container {
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* end main */
+/* start stepOne */
+.main .container .step-one {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+}
+.main .container .step-one form {
+  background-color: #212936;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #a1a1a9;
+  border-radius: 15px;
+}
+.main .container .step-one form h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.main .container .step-one form label {
+  color: #a1a1a9;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.main .container .step-one form input {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #a1a1a9;
+  margin-bottom: 30px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.main .container .step-one form button {
+  width: 125px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(0deg, #652cd1, #845eee);
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+/* end stepOne */
