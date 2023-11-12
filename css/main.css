@@ -85,7 +85,7 @@ html {
 /* end stepOne */
 /* start step two */
 .main .container .step-two {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -122,7 +122,7 @@ html {
   cursor: pointer;
 }
 .main .container .step-two form .checkbox-container input {
-  /* display: none; */
+  display: none;
   cursor: pointer;
 }
 .main .container .step-two form button {
@@ -137,6 +137,66 @@ html {
   cursor: pointer;
 }
 /* end step two */
+/* start step three */
+.main .container .step-three {
+  /* display: none; */
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 80%;
+}
+.main .container .step-three .three-container {
+  background-color: #212936;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #a1a1a9;
+  border-radius: 15px;
+}
+.main .container .step-three .three-container h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+/* .main .container .step-three .three-container .three-content {
+  
+} */
+.main .container .step-three .three-container .three-content h4 {
+  color: #4d5562;
+  font-weight: 500;
+}
+.main .container .step-three .three-container .three-content h4 span {
+  color: white;
+}
+.main .container .step-three .three-container .three-content h4:nth-child(2) {
+  margin-bottom: 25px;
+  margin-top: 7px;
+}
+.main .container .step-three .three-container .three-content ul {
+  margin: 10px 0 20px 35px;
+  margin-left: 35px;
+  color: white;
+  text-transform: capitalize;
+}
+.main .container .step-three .three-container .three-content ul li {
+  margin-bottom: 7px;
+}
+.main .container .step-three .three-container button {
+  width: 125px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(0deg, #652cd1, #845eee);
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 20px;
+}
+/* end step three */
 /* start swich bullets */
 .switch-bullets {
   color: white;
