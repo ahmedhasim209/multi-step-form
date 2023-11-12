@@ -34,6 +34,7 @@ html {
 /* end main */
 /* start stepOne */
 .main .container .step-one {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -81,6 +82,61 @@ html {
   text-transform: capitalize;
   cursor: pointer;
 }
+/* end stepOne */
+/* start step two */
+.main .container .step-two {
+  /* display: none; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 80%;
+}
+.main .container .step-two form {
+  background-color: #212936;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #a1a1a9;
+  border-radius: 15px;
+}
+.main .container .step-two form h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.main .container .step-two form .checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+.main .container .step-two form .checkbox-container label {
+  background-color: #394150;
+  outline: none;
+  margin-bottom: 30px;
+  height: 50px;
+  padding: 16px;
+  border-radius: 10px;
+  color: #a1a1a9;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.main .container .step-two form .checkbox-container input {
+  /* display: none; */
+  cursor: pointer;
+}
+.main .container .step-two form button {
+  width: 125px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(0deg, #652cd1, #845eee);
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+/* end step two */
 /* start swich bullets */
 .switch-bullets {
   color: white;
@@ -89,6 +145,10 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .switch-bullets p {
   font-weight: 400;
@@ -104,4 +164,3 @@ html {
   border-radius: 50%;
 }
 /* end swich bullets */
-/* end stepOne */
