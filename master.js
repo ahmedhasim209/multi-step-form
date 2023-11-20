@@ -1,7 +1,6 @@
-let continueButton = document.querySelector(
-  ".main .container .step-one form button"
-);
+// logic for step one
 
-continueButton.addEventListener("click", (e) => {
-    
-});
+// select step one button
+let buttonOne = document.querySelector(".step-one form button");
+console.log(buttonOne);
+
