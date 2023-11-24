@@ -108,15 +108,13 @@ html {
 .main .container .step-two {
   position: absolute;
   top: 50%;
-  left: 114%;
+  left: 141%;
   transform: translate(-50%, -50%);
   width: 80%;
   height: 80%;
+  transition: 0.3s ease;
 }
 .main .container .step-two form {
-  position: absolute;
-  width: 100%;
-  left: 114%;
   background-color: #212936;
   padding: 35px;
   display: flex;
@@ -134,7 +132,7 @@ html {
   display: flex;
   flex-direction: column;
 }
-.main .container .step-two form .checkbox-container label {
+.main .container .step-two form .checkbox-container .check-box {
   background-color: #394150;
   outline: none;
   margin-bottom: 30px;
@@ -144,10 +142,11 @@ html {
   color: #a1a1a9;
   text-transform: capitalize;
   cursor: pointer;
+  border: 1px solid white;
 }
-.main .container .step-two form .checkbox-container input {
-  display: none;
-  cursor: pointer;
+.main .container .step-two form .checkbox-container .check-box.clicked {
+  background: linear-gradient(0deg, #652cd1, #845eee);
+  color: white;
 }
 .main .container .step-two form button {
   width: 125px;
@@ -163,13 +162,13 @@ html {
 /* end step two */
 /* start step three */
 .main .container .step-three {
-  display: none;
   position: absolute;
   top: 56%;
-  left: 50%;
+  left: 160%;
   transform: translate(-50%, -50%);
   width: 80%;
   height: 80%;
+  transition: 0.3s ease;
 }
 .main .container .step-three .three-container {
   background-color: #212936;
