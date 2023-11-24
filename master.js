@@ -146,3 +146,27 @@ btnTwo.addEventListener("click", (event) => {
     }
   });
 });
+
+// start logic for step three
+
+// select main div
+let mainDiv = document.querySelector(".main");
+
+// select step three button
+let btnThree = document.querySelector(".step-three .three-container button");
+
+btnThree.addEventListener("click", (e) => {
+  let overLay = document.createElement("div");
+  overLay.style =
+    "width : 100%; height : 100%; background-color : #00000080; position :absolute; z-index : 1000; ";
+  mainDiv.appendChild(overLay);
+  let alertBox = document.createElement("div");
+  alertBox.style =
+    "background: linear-gradient(135deg, rgb(38, 29, 81), rgb(18, 24, 38), rgb(18, 24, 38), rgb(18, 24, 38), rgb(18, 24, 38), rgb(38, 29, 81));z-index: 1001;width: 35%;height: 25%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);border: 1px solid #a1a1a9;border-radius: 15px;";
+  overLay.appendChild(alertBox);
+  let alertText = document.createElement("h1");
+  alertText.innerHTML = "Success &#128131&#129309&#127997 ✅✅";
+  alertText.style =
+    "color: white;display: flex;justify-content: center;align-items: center;height: 100%;margin: 0 ;padding: 0;font-weight: 500;";
+  alertBox.appendChild(alertText);
+});
