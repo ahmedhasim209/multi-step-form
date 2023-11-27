@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Inter", sans-serif;
+}
+/* start main */
+.main {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #261d51,
+    #121826,
+    #121826,
+    #121826,
+    #121826,
+    #261d51
+  );
+}
+.main .container {
+  margin: 0;
+  padding: 0;
+  height: 485px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+/* end main */
+/* start stepOne */
+.main .container .step-one {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 65%;
+  transition: 0.3s ease;
+}
+.main .container .step-one form {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  background-color: #212936;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #a1a1a9;
+  border-radius: 15px;
+  transition: 0.5s ease;
+}
+.main .container .step-one form h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.main .container .step-one form label {
+  color: #a1a1a9;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.main .container .step-one form input {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #a1a1a9;
+  margin-bottom: 35px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.name-error {
+  position: absolute;
+  top: 140px;
+  left: 37px;
+  color: white;
+  text-transform: capitalize;
+}
+.email-error {
+  position: absolute;
+  bottom: 88px;
+  left: 37px;
+  color: white;
+  text-transform: capitalize;
+}
+.main .container .step-one form button {
+  width: 125px;
+  height: 45px;
+  margin-top: 10px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(0deg, #652cd1, #845eee);
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .main .container .step-one {
+    width: 100%;
+    height: 65%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .main .container .step-one {
+    width: 80%;
+    height: 65%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main .container .step-one {
+    width: 100%;
+    height: 65%;
+  }
+}
+/* end stepOne */
+/* start step two */
+.main .container .step-two {
+  position: absolute;
+  top: 50%;
+  left: 141%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  transition: 0.3s ease;
+}
+.main .container .step-two form {
+  background-color: #212936;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #a1a1a9;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+.main .container .step-two form h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.main .container .step-two form .checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+.main .container .step-two form .checkbox-container .check-box {
+  background-color: #394150;
+  outline: none;
+  margin-bottom: 30px;
+  height: 50px;
+  padding: 16px;
+  border-radius: 10px;
+  color: #a1a1a9;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.main .container .step-two form .checkbox-container .check-box.clicked {
+  background: linear-gradient(0deg, #652cd1, #845eee);
+  color: white;
+}
+.main .container .step-two form button {
+  width: 125px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(0deg, #652cd1, #845eee);
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .main .container .step-two {
+    width: 100%;
+    left: 151%;
+  }
+}
+/* end step two */
+/* start step three */
+.main .container .step-three {
+  position: absolute;
+  top: 56%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  transition: 0.3s ease;
+}
+.main .container .step-three .three-container {
+  background-color: #212936;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #a1a1a9;
+  border-radius: 15px;
+}
+.main .container .step-three .three-container h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.main .container .step-three .three-container .three-content h4 {
+  color: #4d5562;
+  font-weight: 500;
+}
+.main .container .step-three .three-container .three-content h4 span {
+  color: white;
+}
+.main .container .step-three .three-container .three-content h4:nth-child(2) {
+  margin-bottom: 25px;
+  margin-top: 7px;
+}
+.main .container .step-three .three-container .three-content ul {
+  margin: 10px 0 20px 35px;
+  margin-left: 35px;
+  color: white;
+  text-transform: capitalize;
+}
+.main .container .step-three .three-container .three-content ul li {
+  margin-bottom: 7px;
+}
+.main .container .step-three .three-container button {
+  width: 125px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(0deg, #652cd1, #845eee);
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 20px;
+}
+@media (max-width: 480px) {
+  .main .container .step-three {
+    width: 100%;
+  }
+}
+/* end step three */
+/* start alert */
+@media (max-width: 480px) {
+  .over-lay .alert-box {
+    width: 100% !important;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .over-lay .alert-box {
+    width: 90% !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .over-lay .alert-box {
+    width: 90% !important;
+  }
+}
+@media (min-width: 1025px) {
+  .over-lay .alert-box {
+    width: 50% !important;
+  }
+}
+/* end alert */
+/* start swich bullets */
+.switch-bullets {
+  color: white;
+  text-align: left;
+  margin: 15px auto 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.switch-bullets p {
+  font-weight: 400;
+  color: #394150;
+  margin-right: 10px;
+}
+.switch-bullets span {
+  width: 10px;
+  height: 10px;
+  background-color: #212936;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.switch-bullets span.color {
+  background-color: #652cd1;
+  position: relative;
+}
+.switch-bullets span.active::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(101, 44, 209, 0.6);
+  top: -3px;
+  left: -3px;
+  border-radius: 50%;
+}
+/* end swich bullets */
+/* start media query */
+/* mobile screens */
+@media (min-width: 320px) and (max-width: 480px) {
+  .main .container {
+    width: 100%;
+  }
+}
+/* tablets screens */
+@media (min-width: 481px) and (max-width: 768px) {
+  .main .container {
+    width: 100%;
+  }
+}
+/* meduim screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main .container {
+    width: 70%;
+  }
+}
+/* large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .main .container {
+    width: 60%;
+  }
+}
+/* extra large screens */
+@media (min-width: 1201px) {
+  .main .container {
+    width: 60%;
+  }
+}
+
+/* end media query */
