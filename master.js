@@ -83,7 +83,7 @@ formOne.addEventListener("submit", (event) => {
       .getElementsByTagName("span")[1]
       .classList.add("color", "active");
     phBullets.textContent = "Step 2 of 3";
-    stepOne.style.left = "-45%";
+    stepOne.style.left = "-55%";
     stepTwo.style.left = "50%";
     data.name = nameInput;
     data.email = emailInput;
@@ -139,7 +139,7 @@ btnTwo.addEventListener("click", (event) => {
         .getElementsByTagName("span")[2]
         .classList.add("color", "active");
       phBullets.textContent = "Step 3 of 3";
-      stepTwo.style.left = "-45%";
+      stepTwo.style.left = "-55%";
       stepThree.style.left = "50%";
       spanName.textContent = data.name;
       spanEmail.textContent = data.email;
@@ -156,11 +156,16 @@ let mainDiv = document.querySelector(".main");
 let btnThree = document.querySelector(".step-three .three-container button");
 
 btnThree.addEventListener("click", (e) => {
+  // start alert
+  // create over lay
   let overLay = document.createElement("div");
+  overLay.classList.add("over-lay");
   overLay.style =
     "width : 100%; height : 100%; background-color : #00000080; position :absolute; z-index : 1000; ";
   mainDiv.appendChild(overLay);
+  // create alert Box
   let alertBox = document.createElement("div");
+  alertBox.classList.add("alert-box");
   alertBox.style =
     "background: linear-gradient(135deg, rgb(38, 29, 81), rgb(18, 24, 38), rgb(18, 24, 38), rgb(18, 24, 38), rgb(18, 24, 38), rgb(38, 29, 81));z-index: 1001;width: 35%;height: 25%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);border: 1px solid #a1a1a9;border-radius: 15px;";
   overLay.appendChild(alertBox);

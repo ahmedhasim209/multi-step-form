@@ -36,7 +36,6 @@ html {
 /* end main */
 /* start stepOne */
 .main .container .step-one {
-  /* display: none; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,6 +103,24 @@ html {
   text-transform: capitalize;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  .main .container .step-one {
+    width: 100%;
+    height: 65%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .main .container .step-one {
+    width: 80%;
+    height: 65%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main .container .step-one {
+    width: 100%;
+    height: 65%;
+  }
+}
 /* end stepOne */
 /* start step two */
 .main .container .step-two {
@@ -159,6 +176,12 @@ html {
   color: white;
   text-transform: capitalize;
   cursor: pointer;
+}
+@media (max-width: 480px) {
+  .main .container .step-two {
+    width: 100%;
+    left: 151%;
+  }
 }
 /* end step two */
 /* start step three */
@@ -217,7 +240,34 @@ html {
   cursor: pointer;
   margin-top: 20px;
 }
+@media (max-width: 480px) {
+  .main .container .step-three {
+    width: 100%;
+  }
+}
 /* end step three */
+/* start alert */
+@media (max-width: 480px) {
+  .over-lay .alert-box {
+    width: 100% !important;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .over-lay .alert-box {
+    width: 90% !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .over-lay .alert-box {
+    width: 90% !important;
+  }
+}
+@media (min-width: 1025px) {
+  .over-lay .alert-box {
+    width: 50% !important;
+  }
+}
+/* end alert */
 /* start swich bullets */
 .switch-bullets {
   color: white;
@@ -258,3 +308,36 @@ html {
   border-radius: 50%;
 }
 /* end swich bullets */
+/* start media query */
+/* mobile screens */
+@media (min-width: 320px) and (max-width: 480px) {
+  .main .container {
+    width: 100%;
+  }
+}
+/* tablets screens */
+@media (min-width: 481px) and (max-width: 768px) {
+  .main .container {
+    width: 100%;
+  }
+}
+/* meduim screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main .container {
+    width: 70%;
+  }
+}
+/* large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .main .container {
+    width: 60%;
+  }
+}
+/* extra large screens */
+@media (min-width: 1201px) {
+  .main .container {
+    width: 60%;
+  }
+}
+
+/* end media query */
